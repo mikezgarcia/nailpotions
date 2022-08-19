@@ -8,7 +8,7 @@
     <!-- End of Meta Tags -->
 
     <!-- Bootstrap Here -->
-    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
     <!-- End of Bootstrap -->
 
     <!-- Font Awesome -->
@@ -22,7 +22,7 @@
     <!-- End Font Awesome Link -->
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 
     <title>Nail Potions | Home</title>
   </head>
@@ -30,8 +30,8 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-          <a href="index.html" class="navbar-brand d-flex order-lg-0">
-            <img src="/assets/images/logo_white.png" alt="Nail Potion Logo" />
+          <a href="./index.html" class="navbar-brand d-flex order-lg-0">
+            <img src="./assets/images/logo_white.png" alt="Nail Potion Logo" />
           </a>
 
           <div class="nav-btns order-lg-2 d-flex align-content-end px-2">
@@ -45,7 +45,9 @@
               class="smIcon nav-link position-relative px-2"
               ><i class="fa-brands fa-instagram" aria-hidden="true"></i
             ></a>
-            <a href="login.html" class="smIcon nav-link position-relative px-2"
+            <a
+              href="./login.html"
+              class="smIcon nav-link position-relative px-2"
               ><i class="fa fa-right-to-bracket" aria-hidden="true"></i
             ></a>
           </div>
@@ -62,19 +64,27 @@
           <div class="collapse navbar-collapse order-lg-1" id="nav-menu">
             <ul class="navbar-nav mx-auto text-center">
               <li class="nav-item px-2 py-2">
-                <a href="booknow.html" class="nav-link text-light">Book Now</a>
+                <a href="./booknow.html" class="nav-link text-light"
+                  >Book Now</a
+                >
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="services.html" class="nav-link text-light">Services</a>
+                <a href="./services.html" class="nav-link text-light"
+                  >Services</a
+                >
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="specials.html" class="nav-link text-light">Specials</a>
+                <a href="./specials.html" class="nav-link text-light"
+                  >Specials</a
+                >
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="gallery.html" class="nav-link text-light">Gallery</a>
+                <a href="./gallery.html" class="nav-link text-light">Gallery</a>
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="location.html" class="nav-link text-light">Location</a>
+                <a href="./location.html" class="nav-link text-light"
+                  >Location</a
+                >
               </li>
             </ul>
           </div>
@@ -83,57 +93,218 @@
     </header>
     <!-- end of Navagation Bar -->
 
+    <!-- Hero Section -->
     <section
       id="banner"
-      class="p-lg-0 pt-lg-5 text-center text-sm-start text-md-start"
+      class="p-5 p-lg-0 pt-lg-5 text-center text-sm-start text-md-start"
     >
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
           <div class="hero-text">
             <h1>
-              WE MAKE YOUR <span class="nails">NAILS</span> WITH
-              <span class="love">LOVE</span>
+              WE MAKE YOUR <span class="nude">NAILS</span> WITH
+              <span class="red">LOVE</span>
             </h1>
             <p>Choose the best potion for your nail magic!</p>
             <button class="btn btn-lg text-center fw-lighter">Book Now</button>
           </div>
+
           <img
-            src="/assets/images/img_girl.png"
+            src="./assets/images/img_girl.png"
             alt=""
-            class="w-50 d-none d-md-block"
+            class="d-none d-md-none d-lg-block align-self-md-end"
           />
         </div>
+        <img
+          src="./assets/images/img_hands.png"
+          alt="img_hand"
+          class="img-hands visually-hidden"
+        />
       </div>
     </section>
+    <!-- End Of Hero Section -->
+    <!-- Brands Section -->
     <section class="brandlogos">
+      <div class="hr"></div>
       <div class="brand-logos text-center">
         <h2 class="fw-ligher pt-5">Brands that we use:</h2>
         <ul
           class="d-sm-flex flex-wrap align-items-center justify-content-evenly p-3 px-5"
         >
           <li>
-            <img src="/assets/images/orly_logo 1.png" class="p-2" alt="" />
+            <img src="./assets/images/orly_logo 1.png" class="p-2" alt="" />
           </li>
           <li>
-            <img src="/assets/images/essie-logo 1.png" class="p-2" alt="" />
+            <img src="./assets/images/essie-logo 1.png" class="p-2" alt="" />
           </li>
           <li>
-            <img src="/assets/images/jinsoon_logo 1.png" class="p-2" alt="" />
+            <img src="./assets/images/jinsoon_logo 1.png" class="p-2" alt="" />
           </li>
           <li>
-            <img src="/assets/images/zoya_logo 1.png" class="p-2" alt="" />
+            <img src="./assets/images/zoya_logo 1.png" class="p-2" alt="" />
           </li>
         </ul>
       </div>
     </section>
+    <!-- End Of Brands Logo Section -->
+    <!-- Services Section -->
+    <section class="services_main">
+      <div class="hr"></div>
+      <div class="container">
+        <div class="text-center">
+          <h1 class="fw-bolder pt-5">
+            OUR CRAFTED <span class="darker">POTIONS</span>
+          </h1>
+          <h3 class="fw-light">
+            Choose from a wide variety of Secret Potions, perfect for your every
+            need!
+          </h3>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row g-3 pt-5 m-3 justify-content-center">
+          <!-- Nail Potions -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div
+              class="service-title d-flex flex-row align-items-center justify-content-center p-3 bg-dark mb-2"
+            >
+              <img
+                src="./assets/images/nails_white.png"
+                alt="service_nails"
+                class="w-25"
+              />
+              <h1 class="fw-semibold">
+                <span class="nude">Nail</span> Potions
+              </h1>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="fw-bold">
+                  Our <span class="red">Top 5 </span>Potions
+                </h3>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <h4 class="fw-light">Premium Manicure</h4>
+                    <h4 class="fw-light">Premium Pedicure</h4>
+                    <h4 class="fw-light">Polygen Extension</h4>
+                    <h4 class="fw-light">Hands Cuticle Cleaning</h4>
+                    <h4 class="fw-light">Feet Cuticle Cleaning</h4>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <h4 class="fw-semibold">230</h4>
+                    <h4 class="fw-semibold">240</h4>
+                    <h4 class="fw-semibold">1500</h4>
+                    <h4 class="fw-semibold">150</h4>
+                    <h4 class="fw-semibold">200</h4>
+                  </div>
+                </div>
+                <a href="./services.html" class="d-flex text-decoration-none"
+                  ><h4 class="fw-bold">
+                    VIEW MORE <i class="fa-solid fa-angles-right fa-md"></i></h4
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Nail Potions -->
+          <!-- Hair Potions -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div
+              class="service-title d-flex flex-row align-items-center justify-content-center p-3 bg-dark mb-2"
+            >
+              <img
+                src="./assets/images/hair_white.png"
+                alt="service_nails"
+                class="w-25"
+              />
+              <h1 class="fw-semibold">
+                <span class="nude">Hair</span> Potions
+              </h1>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="fw-bold">
+                  Our <span class="red">Top 5 </span>Potions
+                </h3>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <h4 class="fw-light">Premium Manicure</h4>
+                    <h4 class="fw-light">Premium Pedicure</h4>
+                    <h4 class="fw-light">Polygen Extension</h4>
+                    <h4 class="fw-light">Hands Cuticle Cleaning</h4>
+                    <h4 class="fw-light">Feet Cuticle Cleaning</h4>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <h4 class="fw-semibold">230</h4>
+                    <h4 class="fw-semibold">240</h4>
+                    <h4 class="fw-semibold">1500</h4>
+                    <h4 class="fw-semibold">150</h4>
+                    <h4 class="fw-semibold">200</h4>
+                  </div>
+                </div>
+                <a href="./services.html" class="d-flex text-decoration-none"
+                  ><h4 class="fw-bold">
+                    VIEW MORE <i class="fa-solid fa-angles-right fa-md"></i></h4
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Hair Potions -->
+          <!-- Skin Potions -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div
+              class="service-title d-flex flex-row align-items-center justify-content-center p-3 bg-dark mb-2"
+            >
+              <img
+                src="./assets/images/foot.png"
+                alt="service_nails"
+                class="w-25"
+              />
+              <h1 class="fw-semibold">
+                <span class="nude">Skin</span> Potions
+              </h1>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="fw-bold">
+                  Our <span class="red">Top 5 </span>Potions
+                </h3>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <h4 class="fw-light">Premium Manicure</h4>
+                    <h4 class="fw-light">Premium Pedicure</h4>
+                    <h4 class="fw-light">Polygen Extension</h4>
+                    <h4 class="fw-light">Hands Cuticle Cleaning</h4>
+                    <h4 class="fw-light">Feet Cuticle Cleaning</h4>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <h4 class="fw-semibold">230</h4>
+                    <h4 class="fw-semibold">240</h4>
+                    <h4 class="fw-semibold">1500</h4>
+                    <h4 class="fw-semibold">150</h4>
+                    <h4 class="fw-semibold">200</h4>
+                  </div>
+                  <div></div>
+                </div>
+                <a href="./services.html" class="d-flex text-decoration-none"
+                  ><h4 class="fw-bold">
+                    VIEW MORE <i class="fa-solid fa-angles-right fa-md"></i></h4
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Nail Potions -->
+        </div>
+      </div>
+    </section>
+    <!-- End OF Services Section -->
 
     <!-- ---- JQuery JS ---- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- ---- Isotope JS ---- -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

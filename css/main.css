@@ -22,17 +22,15 @@
 body {
   font-family: var(--lg-font);
   background-color: white;
+  color: var(--darker);
 }
 
-h2 {
-  color: var(--darker);
-  font-size: 2rem;
-}
-p {
-  color: var(--darker);
-}
 ul {
   list-style-type: none;
+}
+.hr {
+  background-color: var(--teal);
+  height: 1rem;
 }
 
 .btn {
@@ -40,6 +38,11 @@ ul {
   box-shadow: var(--softshadow);
   color: var(--lightgray);
 }
+
+/* Utilities */
+
+/* Navbar */
+
 .navbar {
   background-color: var(--darker);
 }
@@ -54,15 +57,17 @@ ul {
   color: whitesmoke;
 }
 .smIcon:hover {
-  color: var(--teal);
+  color: var(--teal) !important;
 }
 /* End Nav */
+
 /* Banner */
 #banner {
   background: url(/assets/images/bg.jpg) top/cover;
 }
 
 #banner h1 {
+  padding-top: 2rem;
   color: var(--darker);
   font-size: 6rem;
 }
@@ -70,28 +75,72 @@ ul {
   color: var(--darker);
   font-size: 2rem;
 }
-#banner h1 span.nails {
+#banner img {
+  width: 50%;
+}
+span.nude {
   color: var(--skintone) !important;
 }
-#banner h1 span.love {
+span.red {
   color: var(--bloodred) !important;
+}
+span.darker {
+  color: var(--darker);
 }
 
 @media screen and (max-width: 480px) {
+  #banner {
+    padding-bottom: 2rem;
+  }
+
   #banner h1 {
-    font-size: 3rem;
+    padding-top: 2rem;
+    font-size: 3.5rem;
   }
   #banner p {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .img-hands img {
+    visibility: visible;
+  }
+}
+
+/* Services Main */
+.services_main {
+  background-color: var(--skintone);
+  color: var(--lightgray);
+}
+
+.services_main .card {
+  color: var(--darker);
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: -1.5rem;
+}
+
+.service-title {
+  border-radius: 15px !important;
+  border: solid 3px var(--lightgray);
+}
+
+.card a {
+  color: var(--darker) !important;
+}
+.card a:hover {
+  color: var(--skintone) !important;
+}
+
+/* End Service Main */
 
 #gallery {
   background: url(/assets/images/5.png) top/cover;
   height: 100vh;
 }
 
-.card {
+.product-collections .card {
   /* width: 20rem; */
   height: 550px;
   background-color: var(--teal);
