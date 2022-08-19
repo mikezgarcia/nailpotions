@@ -28,18 +28,13 @@
   </head>
   <body>
     <header>
-      <nav class="navbar py-1 navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-          <a
-            href="index.html"
-            class="navbar-brand d-flex align-items-center justify-content-between order-lg-0"
-          >
+          <a href="index.html" class="navbar-brand d-flex order-lg-0">
             <img src="/assets/images/logo_white.png" alt="Nail Potion Logo" />
           </a>
 
-          <div
-            class="nav-btns order-lg-2 d-flex align-items-center justify-content-between px-2"
-          >
+          <div class="nav-btns order-lg-2 d-flex align-content-end px-2">
             <a
               href="https://www.facebook.com/thenailpotions"
               class="smIcon nav-link position-relative px-2"
@@ -50,49 +45,95 @@
               class="smIcon nav-link position-relative px-2"
               ><i class="fa-brands fa-instagram" aria-hidden="true"></i
             ></a>
-            <a
-              href="https://www.instagram.com/nailpotions/"
-              class="smIcon nav-link position-relative px-2"
+            <a href="login.html" class="smIcon nav-link position-relative px-2"
               ><i class="fa fa-right-to-bracket" aria-hidden="true"></i
             ></a>
-
-            <!-- End Icons -->
-
-            <button
-              class="navbar-toggler border-0"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#nav-menu"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
           </div>
+          <!-- End Icons -->
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <!-- End nav-btns -->
           <div class="collapse navbar-collapse order-lg-1" id="nav-menu">
             <ul class="navbar-nav mx-auto text-center">
               <li class="nav-item px-2 py-2">
-                <a href="#" class="nav-link text-light">Book Now</a>
+                <a href="booknow.html" class="nav-link text-light">Book Now</a>
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="#collection" class="nav-link text-light">Services</a>
+                <a href="services.html" class="nav-link text-light">Services</a>
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="#specials" class="nav-link text-light">Specials</a>
+                <a href="specials.html" class="nav-link text-light">Specials</a>
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="#blogs" class="nav-link text-light">Gallery</a>
+                <a href="gallery.html" class="nav-link text-light">Gallery</a>
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="#about-us" class="nav-link text-light">Location</a>
+                <a href="location.html" class="nav-link text-light">Location</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <!-- end of Navagation Bar -->
 
+    <section
+      id="banner"
+      class="p-lg-0 pt-lg-5 text-center text-sm-start text-md-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="hero-text">
+            <h1>
+              WE MAKE YOUR <span class="nails">NAILS</span> WITH
+              <span class="love">LOVE</span>
+            </h1>
+            <p>Choose the best potion for your nail magic!</p>
+            <button class="btn btn-lg text-center fw-lighter">Book Now</button>
+          </div>
+          <img
+            src="/assets/images/img_girl.png"
+            alt=""
+            class="w-50 d-none d-md-block"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="brandlogos">
+      <div class="brand-logos text-center">
+        <h2 class="fw-ligher pt-5">Brands that we use:</h2>
+        <ul
+          class="d-sm-flex flex-wrap align-items-center justify-content-evenly p-3 px-5"
+        >
+          <li>
+            <img src="/assets/images/orly_logo 1.png" class="p-2" alt="" />
+          </li>
+          <li>
+            <img src="/assets/images/essie-logo 1.png" class="p-2" alt="" />
+          </li>
+          <li>
+            <img src="/assets/images/jinsoon_logo 1.png" class="p-2" alt="" />
+          </li>
+          <li>
+            <img src="/assets/images/zoya_logo 1.png" class="p-2" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ---- JQuery JS ---- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- ---- Isotope JS ---- -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="/js/bootstrap/bootstrap.min.js"></script>
-    <!-- End Bootstrap JS -->
+
+    <script src="js/main.js"></script>
   </body>
 </html>
