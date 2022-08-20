@@ -48,6 +48,8 @@
             <a
               href="./login.html"
               class="smIcon nav-link position-relative px-2"
+              data-bs-toggle="modal"
+            data-bs-target="#login"
               ><i class="fa fa-right-to-bracket" aria-hidden="true"></i
             ></a>
           </div>
@@ -92,6 +94,58 @@
       </nav>
     </header>
     <!-- end of Navagation Bar -->
+
+    <!-- Login Modal -->
+    <!-- Modal -->
+  <div
+  class="modal fade"
+  id="login"
+  tabindex="-1"
+  aria-labelledby="loginLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Login</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p>Welcome to <span><img src="./assets/images/logo_drk.png" alt="Nail Potion Logo" class="login_logo" /></span> Customers WebApp</p>
+        <form action="">
+          <div class="mb-3">
+            <label for="username" class="col-form-label">Username</label>
+            <input type="text" class="form-control" id="username" />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="col-form-label">Password</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+          <div class="mb-3">
+            <label for="confirm_password" class="col-form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirm_password" />
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- End Login Modal -->
 
     <!-- Hero Section -->
     <section
