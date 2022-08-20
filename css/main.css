@@ -177,6 +177,7 @@ span.darker {
 
 .footer {
   background-color: var(--dark);
+  color: var(--lightgray);
 }
 
 .footer .copyright {
