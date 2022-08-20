@@ -175,7 +175,7 @@ span.darker {
 }
 
 .booknow_main {
-  background: url(../assets/images/heroimg2.jpg) top/cover;
+  background: url(../assets/images/bg3.jpg) top/cover;
 }
 
 .product-collections .card {
@@ -247,9 +247,10 @@ span.darker {
 
 .google-maps {
   position: relative;
-  padding-bottom: 75%; // This is the aspect ratio
+  padding-bottom: 75%;
   height: 0;
   overflow: hidden;
+  opacity: 0.3;
 }
 .google-maps iframe {
   position: absolute;
@@ -263,4 +264,32 @@ span.darker {
   height: 30px;
   margin-left: 7px;
   margin-right: 7px;
+}
+
+.calendar_reserve {
+  height: 75vh;
+  width: 100%;
+}
+
+.calendly-inline-widget {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .calendar_reserve {
+    height: auto;
+    width: 100%;
+  }
+
+  .calendly-inline-widget {
+    height: 630px;
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-hands img {
+    visibility: visible;
+  }
 }
