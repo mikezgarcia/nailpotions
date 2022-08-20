@@ -8,7 +8,7 @@
     <!-- End of Meta Tags -->
 
     <!-- Bootstrap Here -->
-    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
     <!-- End of Bootstrap -->
 
     <!-- Font Awesome -->
@@ -22,7 +22,7 @@
     <!-- End Font Awesome Link -->
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <title>Nail Potions | Home</title>
   </head>
@@ -30,8 +30,8 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-          <a href="index.html" class="navbar-brand d-flex order-lg-0">
-            <img src="/assets/images/logo_white.png" alt="Nail Potion Logo" />
+          <a href="./index.html" class="navbar-brand d-flex order-lg-0">
+            <img src="./assets/images/logo_white.png" alt="Nail Potion Logo" />
           </a>
 
           <div class="nav-btns order-lg-2 d-flex align-content-end px-2">
@@ -45,7 +45,9 @@
               class="smIcon nav-link position-relative px-2"
               ><i class="fa-brands fa-instagram" aria-hidden="true"></i
             ></a>
-            <a href="login.html" class="smIcon nav-link position-relative px-2"
+            <a
+              href="./login.html"
+              class="smIcon nav-link position-relative px-2"
               ><i class="fa fa-right-to-bracket" aria-hidden="true"></i
             ></a>
           </div>
@@ -62,19 +64,27 @@
           <div class="collapse navbar-collapse order-lg-1" id="nav-menu">
             <ul class="navbar-nav mx-auto text-center">
               <li class="nav-item px-2 py-2">
-                <a href="booknow.html" class="nav-link text-light">Book Now</a>
+                <a href="./booknow.html" class="nav-link text-light"
+                  >Book Now</a
+                >
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="services.html" class="nav-link text-light">Services</a>
+                <a href="./services.html" class="nav-link text-light"
+                  >Services</a
+                >
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="specials.html" class="nav-link text-light">Specials</a>
+                <a href="./specials.html" class="nav-link text-light"
+                  >Specials</a
+                >
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="gallery.html" class="nav-link text-light">Gallery</a>
+                <a href="./gallery.html" class="nav-link text-light">Gallery</a>
               </li>
               <li class="nav-item px-2 py-2">
-                <a href="location.html" class="nav-link text-light">Location</a>
+                <a href="./location.html" class="nav-link text-light"
+                  >Location</a
+                >
               </li>
             </ul>
           </div>
@@ -83,33 +93,101 @@
     </header>
     <!-- end of Navagation Bar -->
     <main>
-      <section id="gallery" class="vh-100">
-        <div class="container h-100 d-flex align-items-center">
-          <!-- <img src="/assets/images/3.png" alt="" /> -->
+      <section id="gallery">
+        <!-- Customer Photos -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 p-0">
+              <div class="gallery-item position-relative overflow-hidden">
+                <img
+                  class="w-100"
+                  src="./assets/images/g1.jpg"
+                  alt="Gallery 1"
+                />
+                <div class="gallery-overlay"></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-0">
+              <div class="gallery-item position-relative overflow-hidden">
+                <img
+                  class="w-100"
+                  src="./assets/images/g2.jpg"
+                  alt="Gallery 2"
+                />
+                <div class="gallery-overlay"></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-0">
+              <div class="gallery-item position-relative overflow-hidden">
+                <img
+                  class="w-100"
+                  src="./assets/images/g3.jpg"
+                  alt="Gallery 3"
+                />
+                <div class="gallery-overlay"></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-0">
+              <div class="gallery-item position-relative overflow-hidden">
+                <img
+                  class="w-100"
+                  src="./assets/images/g4.jpg"
+                  alt="Gallery 4"
+                />
+                <div class="gallery-overlay"></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-0">
+              <div class="gallery-item position-relative overflow-hidden">
+                <img
+                  class="w-100"
+                  src="./assets/images/g5.jpg"
+                  alt="Gallery 5"
+                />
+                <div class="gallery-overlay"></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 p-0">
+              <div class="gallery-item position-relative overflow-hidden">
+                <img
+                  class="w-100"
+                  src="./assets/images/g6.jpg"
+                  alt="Gallery 6"
+                />
+                <div class="gallery-overlay"></div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- End Customer Photos -->
       </section>
-      <section class="logo-filters py-5">
+      <div class="hr"></div>
+      <section class="logo-filters">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap mt-5 justify-content-center filter-button-group"
+          >
+            <button class="btn m-2 active-filter-btn" data-filter="*">
+              All
+            </button>
+            <button class="btn m-2" data-filter=".orly">Orly</button>
+            <button class="btn m-2" data-filter=".essie">Essie</button>
+            <button class="btn m-2" data-filter=".jinsoon">Jinsoon</button>
+            <button class="btn m-2" data-filter=".zoya">Zoya</button>
+          </div>
+        </div>
+        <div class="hr"></div>
+      </section>
+      <section class="gallery_container">
         <div class="container">
           <div class="row g-0">
-            <div
-              class="d-flex flex-wrap mt-5 justify-content-center filter-button-group"
-            >
-              <button class="btn m-2 active-filter-btn" data-filter="*">
-                All
-              </button>
-              <button class="btn m-2" data-filter=".orly">Orly</button>
-              <button class="btn m-2" data-filter=".essie">Essie</button>
-              <button class="btn m-2" data-filter=".jinsoon">Jinsoon</button>
-              <button class="btn m-2" data-filter=".zoya">Zoya</button>
-            </div>
-
             <!-- Product Gallery Collections -->
             <div class="product-collections row mt-4 gx-0 gy-3">
               <!-- Orly Product 1 -->
               <div class="col-md-6 col-xl-3 p-2 orly">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/orly1.png"
+                    src="./assets/images/orly1.png"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -129,7 +207,7 @@
               <div class="col-md-6 col-xl-3 p-2 orly">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/orly2.png"
+                    src="./assets/images/orly2.png"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -150,7 +228,7 @@
               <div class="col-md-6 col-xl-3 p-2 orly">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/orly3.png"
+                    src="./assets/images/orly3.png"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -171,7 +249,7 @@
               <div class="col-md-6 col-xl-3 p-2 orly">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/orly4.png"
+                    src="./assets/images/orly4.png"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -189,7 +267,7 @@
               <div class="col-md-6 col-xl-3 p-2 essie">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/essie1.jpg"
+                    src="./assets/images/essie1.jpg"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -208,7 +286,7 @@
               <div class="col-md-6 col-xl-3 p-2 essie">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/essie2.jpg"
+                    src="./assets/images/essie2.jpg"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -227,7 +305,7 @@
               <div class="col-md-6 col-xl-3 p-2 essie">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/essie3.jpg"
+                    src="./assets/images/essie3.jpg"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -246,7 +324,7 @@
               <div class="col-md-6 col-xl-3 p-2 essie">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/essie4.jpg"
+                    src="./assets/images/essie4.jpg"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -265,7 +343,7 @@
               <div class="col-md-6 col-xl-3 p-2 jinsoon">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/jinsoon1.png"
+                    src="./assets/images/jinsoon1.png"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -283,7 +361,7 @@
               <div class="col-md-6 col-xl-3 p-2 jinsoon">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/jinsoon2.png"
+                    src="./assets/images/jinsoon2.png"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -302,7 +380,7 @@
               <div class="col-md-6 col-xl-3 p-2 jinsoon">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/jinsoon3.png"
+                    src="./assets/images/jinsoon3.png"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -321,7 +399,7 @@
               <div class="col-md-6 col-xl-3 p-2 jinsoon">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/jinsoon4.png"
+                    src="./assets/images/jinsoon4.png"
                     class="card-img-top w-100"
                     alt="orly1"
                   />
@@ -340,7 +418,7 @@
               <div class="col-md-6 col-xl-3 p-2 zoya">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/zoya1.jpg"
+                    src="./assets/images/zoya1.jpg"
                     class="card-img-top w-100"
                     alt="zoya1"
                   />
@@ -358,7 +436,7 @@
               <div class="col-md-6 col-xl-3 p-2 zoya">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/zoya2.jpg"
+                    src="./assets/images/zoya2.jpg"
                     class="card-img-top w-100"
                     alt="zoya2"
                   />
@@ -377,7 +455,7 @@
               <div class="col-md-6 col-xl-3 p-2 zoya">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/zoya3.jpg"
+                    src="./assets/images/zoya3.jpg"
                     class="card-img-top w-100"
                     alt="zoya3"
                   />
@@ -396,7 +474,7 @@
               <div class="col-md-6 col-xl-3 p-2 zoya">
                 <div class="card w-100">
                   <img
-                    src="/assets/images/zoya4.jpg"
+                    src="./assets/images/zoya4.jpg"
                     class="card-img-top w-100"
                     alt="zoya4"
                   />
